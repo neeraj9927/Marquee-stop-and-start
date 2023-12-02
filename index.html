@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop marquee</title>
+    <style>
+        .xyz{
+            cursor: pointer;
+            background: transparent;
+        }
+        p{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <marquee id="mar" behavior="scroll" scrollamount="20" direction="up" id="neeraj">
+        <p>New Media Animation</p>
+    </marquee>
+    
+    <input class="xyz" type="button" value="Stop marquee" onclick="stop()">
+    <input class="xyz" type="button" value="Start Marquee" onclick="start()">
+
+    <script>
+        function stop(){
+            document.getElementById('mar').stop();
+        }
+        function start(){
+            document.getElementById('mar').start();
+        }
+
+        
+    </script>
+</body>
+</html>
